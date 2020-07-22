@@ -60,10 +60,10 @@ public:
 	static const Vector2 Right() { return Vector2(1.f, 0.f); }
 	static const Vector2 Left() { return Vector2(-1.f, 0.f); }
 
-	inline const Vector2& operator =(const Vector2& vec)
+	inline const Vector2& operator=(const D3DXVECTOR2& vector2)
 	{
-		x = vec.x;
-		y = vec.y;
+		x = vector2.x;
+		y = vector2.y;
 	}
 
 	void Set(float x, float y);

@@ -82,6 +82,10 @@
     <ClCompile Include="Director.cpp" />
     <ClCompile Include="Type.cpp" />
     <ClCompile Include="TestScene.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Camera.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h" />
@@ -89,6 +93,10 @@
     <ClInclude Include="Director.h" />
     <ClInclude Include="Type.h" />
     <ClInclude Include="TestScene.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Camera.h" />
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">

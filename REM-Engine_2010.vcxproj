@@ -384,15 +384,27 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Director.cpp" />
     <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="TestScene.cpp" />
+    <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Type.cpp" />
+    <ClInclude Include="Camera.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="Director.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="Renderer.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Sprite.h" />
     <ClInclude Include="TestScene.h" />
+    <ClInclude Include="Texture.h" />
     <ClInclude Include="Type.h" />
     <None Include="DXUT\Optional\directx.ico" />
     <ClInclude Include="DXUT\Core\DXUT.h" />
@@ -420,7 +432,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="REM-Engine.cpp" />
-    <ClCompile Include="EmptyProject9.cpp" />
+    <ClCompile Include="EmptyProject9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
