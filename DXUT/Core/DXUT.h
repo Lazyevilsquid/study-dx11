@@ -95,6 +95,7 @@
 // HRESULT translation for Direct3D and other APIs 
 #include <dxerr.h>
 
+auto __vsnwprintf = _vsnwprintf;
 
 #if defined(DEBUG) || defined(_DEBUG)
 #ifndef V
@@ -356,11 +357,14 @@ void      WINAPI DXUTDestroyState(); // Optional method to destroy DXUT's memory
 #include "DXUTDevice9.h"
 #include "DXUTDevice11.h"
 
-
+// Use Includes
+#include <iostream>
+#include <string>
+#include <list>
+#define ScreenWidth 1280
+#define ScreenHeight 720
+using namespace std;
 
 
 #endif
-
-
-
 

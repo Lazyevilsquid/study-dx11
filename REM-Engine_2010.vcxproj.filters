@@ -1,93 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-<ItemGroup>
-<Filter Include="Resource Files">
-<UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
-<Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-</Filter>
-<Filter Include="DXUT">
-<UniqueIdentifier>{a43c5c25-0e86-4a20-b64a-883785ff74fd}</UniqueIdentifier>
-</Filter>
-</ItemGroup>
-<ItemGroup>
-<None Include="DXUT\Optional\directx.ico">
-<Filter>Resource Files</Filter>
-</None>
-<ClInclude Include="DXUT\Core\DXUT.h">
-<Filter>DXUT</Filter>
-</ClInclude>
-<ClInclude Include="DXUT\Core\DXUTDevice11.h">
-<Filter>DXUT</Filter>
-</ClInclude>
-<ClInclude Include="DXUT\Core\DXUTDevice9.h">
-<Filter>DXUT</Filter>
-</ClInclude>
-<ClInclude Include="DXUT\Core\DXUTmisc.h">
-<Filter>DXUT</Filter>
-</ClInclude>
-<ClCompile Include="DXUT\Core\DXUT.cpp">
-<Filter>DXUT</Filter>
-</ClCompile>
-<ClCompile Include="DXUT\Core\DXUTDevice11.cpp">
-<Filter>DXUT</Filter>
-</ClCompile>
-<ClCompile Include="DXUT\Core\DXUTDevice9.cpp">
-<Filter>DXUT</Filter>
-</ClCompile>
-<ClCompile Include="DXUT\Core\DXUTmisc.cpp">
-<Filter>DXUT</Filter>
-</ClCompile>
-<ClInclude Include="DXUT\Optional\DXUTcamera.h">
-<Filter>DXUT</Filter>
-</ClInclude>
-<ClInclude Include="DXUT\Optional\DXUTgui.h">
-<Filter>DXUT</Filter>
-</ClInclude>
-<ClInclude Include="DXUT\Optional\DXUTres.h">
-<Filter>DXUT</Filter>
-</ClInclude>
-<ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
-<Filter>DXUT</Filter>
-</ClInclude>
-<ClInclude Include="DXUT\Optional\SDKmesh.h">
-<Filter>DXUT</Filter>
-</ClInclude>
-<ClInclude Include="DXUT\Optional\SDKmisc.h">
-<Filter>DXUT</Filter>
-</ClInclude>
-<ClCompile Include="DXUT\Optional\DXUTcamera.cpp">
-<Filter>DXUT</Filter>
-</ClCompile>
-<ClCompile Include="DXUT\Optional\DXUTgui.cpp">
-<Filter>DXUT</Filter>
-</ClCompile>
-<ClCompile Include="DXUT\Optional\DXUTres.cpp">
-<Filter>DXUT</Filter>
-</ClCompile>
-<ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
-<Filter>DXUT</Filter>
-</ClCompile>
-<ClCompile Include="DXUT\Optional\SDKmesh.cpp">
-<Filter>DXUT</Filter>
-</ClCompile>
-<ClCompile Include="DXUT\Optional\SDKmisc.cpp">
-<Filter>DXUT</Filter>
-</ClCompile>
-</ItemGroup>
-<ItemGroup>
-      <ClCompile Include="REM-Engine.cpp" />
-      <ClCompile Include="EmptyProject9.cpp" />
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="DXUT">
+      <UniqueIdentifier>{a43c5c25-0e86-4a20-b64a-883785ff74fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{0dfda87e-7159-45bd-bfc1-37f1d11e365d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Sprite">
+      <UniqueIdentifier>{19b8de0f-ae6f-4639-9a29-858357511e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Node">
+      <UniqueIdentifier>{93de96e4-7dbd-4c8a-9ccf-f1b6a44271f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Type">
+      <UniqueIdentifier>{6d95a08c-75a3-4196-b71f-f79c792310e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene">
+      <UniqueIdentifier>{356bd196-2b8d-4c7f-a762-a4f5267b60f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Renderer">
+      <UniqueIdentifier>{21c4c7b9-4816-4a1b-86d0-064444d4a11b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Director">
+      <UniqueIdentifier>{b2654696-f039-445c-89e4-ef95c2be56dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Texture">
+      <UniqueIdentifier>{f0931400-bf92-4dde-bf01-f34a8a3bff4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Application">
+      <UniqueIdentifier>{0d428c8f-de0e-49e9-800b-9c0880d27928}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
-<ItemGroup>
-</ItemGroup>
-<ItemGroup>
-      <CLInclude Include="resource.h">
-<Filter>Resource Files</Filter>
-</CLInclude>
-      <ResourceCompile Include="REM-Engine.rc">
-<Filter>Resource Files</Filter>
-</ResourceCompile>
+  <ItemGroup>
+    <None Include="DXUT\Optional\directx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <ClInclude Include="DXUT\Core\DXUT.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTDevice11.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTDevice9.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTDevice11.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTDevice9.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClInclude Include="DXUT\Optional\DXUTcamera.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTgui.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTres.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmesh.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Optional\DXUTcamera.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmesh.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
   </ItemGroup>
-<ItemGroup>
-</ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="REM-Engine.cpp" />
+    <ClCompile Include="EmptyProject9.cpp" />
+    <ClCompile Include="TestScene.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Engine\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Engine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Type.cpp">
+      <Filter>Engine\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Engine\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="Director.cpp">
+      <Filter>Engine\Director</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Engine\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Engine\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestScene.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Sprite.h">
+      <Filter>Engine\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Engine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Type.h">
+      <Filter>Engine\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Engine\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Director.h">
+      <Filter>Engine\Director</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Engine\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Engine\Application</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ResourceCompile Include="REM-Engine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
 </Project>

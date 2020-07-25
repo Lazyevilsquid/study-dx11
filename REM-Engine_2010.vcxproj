@@ -151,7 +151,7 @@
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>d3dcompiler.lib;d3dx11d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <LargeAddressAware>true</LargeAddressAware>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
@@ -384,6 +384,34 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Camera.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Director.cpp" />
+    <ClCompile Include="main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="TestScene.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Type.cpp" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Camera.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Director.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="TestScene.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Type.h" />
     <None Include="DXUT\Optional\directx.ico" />
     <ClInclude Include="DXUT\Core\DXUT.h" />
     <ClInclude Include="DXUT\Core\DXUTDevice11.h" />
@@ -409,8 +437,12 @@
     <ClCompile Include="DXUT\Optional\SDKmisc.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="REM-Engine.cpp" />
-    <ClCompile Include="EmptyProject9.cpp" />
+    <ClCompile Include="REM-Engine.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="EmptyProject9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
