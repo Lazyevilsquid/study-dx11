@@ -12,7 +12,7 @@
 HRESULT CALLBACK OnD3D9CreateDevice(IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
     void* pUserContext)
 {
-    Director::getInstance()->SetScene(new TestScene());
+    Director::getInstance()->DirectorInit();
     return S_OK;
 }
 

@@ -2,3 +2,5 @@ C:\Users\CKIRUser\Documents\Visual Studio Projects\DirectXSamples\REM-Engine\Deb
 C:\Users\CKIRUser\Documents\Visual Studio Projects\DirectXSamples\REM-Engine\Debug\REM-Engine.pdb
 C:\Users\CKIRUser\Desktop\study-dx11\Debug\REM-Engine.exe
 C:\Users\CKIRUser\Desktop\study-dx11\Debug\REM-Engine.pdb
+C:\Users\CKIRUser\Desktop\study-dx9\Debug\REM-Engine.exe
+C:\Users\CKIRUser\Desktop\study-dx9\Debug\REM-Engine.pdb

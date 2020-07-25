@@ -20,7 +20,7 @@ void Director::UpdateScene()
 {
 	if (_currentScene != nullptr)
 	{
-		Renderer::getInstance()->Render();
 		_currentScene->Update();
+		Renderer::getInstance()->Render();
 	}
 }
