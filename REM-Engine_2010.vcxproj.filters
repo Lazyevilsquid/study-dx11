@@ -131,6 +131,7 @@
       <Filter>Engine\Application</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Text.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestScene.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="Application.h">
       <Filter>Engine\Application</Filter>
     </ClInclude>
+    <ClInclude Include="Text.h" />
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
