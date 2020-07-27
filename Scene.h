@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _SCENE_H_
+#define _SCENE_H_
+
 class Scene
 {
 public:
@@ -7,3 +9,4 @@ public:
 	virtual void OnExit();
 };
 
+#endif // !_SCENE_H_

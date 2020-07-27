@@ -357,14 +357,5 @@ void      WINAPI DXUTDestroyState(); // Optional method to destroy DXUT's memory
 #include "DXUTDevice9.h"
 #include "DXUTDevice11.h"
 
-// Use Includes
-#include <iostream>
-#include <string>
-#include <list>
-#define ScreenWidth 1280
-#define ScreenHeight 720
-using namespace std;
-
-
 #endif
 

@@ -1,8 +1,8 @@
 #pragma once
 #include "DXUT.h"
-#include <tchar.h>
+#include "Includes.h"
 #include "Type.h"
-class Text : public Singleton<Text>
+class Text
 {
 public:
 	RECT _rt;
@@ -10,7 +10,9 @@ public:
 	LPD3DXFONT _font;
 
 public:
-	void TextInit(int top, int bottom, int right, int left);
-	void TextDraw(TCHAR* string, RECT rt,Color color );
+	void TextInit();
+	void TextDraw(TCHAR* string, int top, int bottom, int right, int left,Color color );
+	void Release();
+
 };
 

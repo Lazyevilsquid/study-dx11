@@ -1,5 +1,6 @@
 #include "DXUT.h"
 #include "Texture.h"
+
 Texture* TextureMNG::LoadTexture(wstring filepath)
 {
 	for (auto it : texturepool)

@@ -1,6 +1,10 @@
-#pragma once
+#ifndef _APPLICATION_H
+#define _APPLICATION_H
+
 #include "DXUT.h"
+#include "Includes.h"
 #include "Scene.h"
+
 class Application
 {
 public:
@@ -17,3 +21,4 @@ public:
 	int Exit();
 };
 
+#endif // !_APPLICATION_H

@@ -1,4 +1,9 @@
-#pragma once
+/// <summary>
+/// Scene 관리해주는 클래스
+/// <\summary>
+
+#ifndef _DIRECTOR_H_
+#define _DIRECTOR_H_
 
 #include "Type.h"
 #include "Scene.h"
@@ -13,3 +18,5 @@ public:
 	void UpdateScene();
 	void SetScene(Scene* scene);
 };
+
+#endif // !_DIRECTOR_H_

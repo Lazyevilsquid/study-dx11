@@ -3,6 +3,7 @@
 #include "Node.h"
 #include "Texture.h"
 #include "Renderer.h"
+
 class Sprite :
 	public Node
 {
