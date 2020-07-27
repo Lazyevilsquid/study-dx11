@@ -1,4 +1,10 @@
-#pragma once
+/// <summary>
+/// 모든 객체의 기본이 되는 class
+/// <\summary>
+
+#ifndef _NODE_H_
+#define _NODE_H_
+
 #include "Type.h"
 
 class Node
@@ -16,13 +22,16 @@ public:
 	int _tag;
 	int _layer;
 	Color _color;
-	Vector2 _nv;	// 법선벡터
+
+	// 법선벡터
+	Vector2 _nv;
 
 public:
 	virtual void Update() { };
 	virtual void Draw() { };
-	
-	D3DXMATRIX GetMatrix();		// 객체의 위치 크기 각도를 담아 행렬로 변환
+
+	// 객체의 위치 크기 각도를 담아 행렬로 변환
+	D3DXMATRIX GetMatrix();	
 
 	void setPosition(const float x, const float y) { _position.Set(x, y); }
 	void setPosition(const Vector2 vec) { _position = vec; }
@@ -40,7 +49,6 @@ public:
 
 	void setActive(const bool active) { _isActive = active; }
 	const bool IsActive() const { return _isActive; }
-
-
 };
 
+#endif // !_NODE_H_

@@ -1,4 +1,7 @@
-#pragma once
+
+#ifndef _RENDERER_H_
+#define _RENDERER_H_
+
 #include "Type.h"
 #include "Node.h"
 class Renderer :
@@ -12,3 +15,5 @@ public:
 	void RemoveRenderTarget(Node* n);
 	void Render();
 };
+
+#endif // !_RENDERER_H_

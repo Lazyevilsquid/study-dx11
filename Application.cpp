@@ -11,11 +11,28 @@
 #include "Director.h"
 #include "TestScene.h"
 #include <iostream>
+#include <tchar.h>
+#include "Text.h"
+
+//LPD3DXFONT m_pFont;
+//RECT rt;    
+//TCHAR stringa[100];
+int g_fps;
+Text* g_textfps = new Text();
 
 HRESULT CALLBACK OnD3D9CreateDevice(IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
     void* pUserContext)
 {
     Director::getInstance()->DirectorInit();
+    g_textfps->TextInit();
+
+  /*  D3DXCreateFont(DXUTGetD3D9Device(), 20, 0, FW_NORMAL, 1, FALSE, DEFAULT_CHARSET,
+        OUT_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_DONTCARE,
+        L"System", &m_pFont);*/
+
+    //SetRect(&rt, 10, 10, 0, 0);
+ 
+
     return S_OK;
 }
 
@@ -29,10 +46,13 @@ void CALLBACK OnD3D9FrameRender(IDirect3DDevice9* pd3dDevice, double fTime, floa
 
     // Render the scene
     if (SUCCEEDED(pd3dDevice->BeginScene()))
-    {
-        Director::getInstance()->UpdateScene(); //지금 디렉터가 가지고 있는 씬 업데이트
-        V(pd3dDevice->EndScene());
-    }
+    
+       g_fps = DXUTGetFPS();
+       wsprintf(g_textfps->_string, TEXT("FPS: %d"), g_fps);
+       g_textfps->TextDraw(g_textfps->_string, 10, 10, 0, 0, Color::White());
+
+       Director::getInstance()->UpdateScene(); //지금 디렉터가 가지고 있는 씬 업데이트
+       V(pd3dDevice->EndScene());
 }
 
 void CALLBACK OnMouse(bool bLeftButtonDown, bool bRightButtonDown, bool bMiddleButtonDown, bool bSideButton1Down, bool bSideButton2Down, int nMouseWheelDelta, int xPos, int yPos, void* pUserContext)
@@ -48,6 +68,7 @@ LRESULT CALLBACK MsgProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam,
 
 void CALLBACK OnD3D9DestroyDevice(void* pUserContext)
 {
+    g_textfps->Release();
    exit(0);
 }
 

@@ -35,6 +35,9 @@
     <Filter Include="Engine\Application">
       <UniqueIdentifier>{0d428c8f-de0e-49e9-800b-9c0880d27928}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Text">
+      <UniqueIdentifier>{ca184d70-4566-4329-b4b4-495224e71b4b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="DXUT\Optional\directx.ico">
@@ -100,6 +103,7 @@
     <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
       <Filter>DXUT</Filter>
     </ClCompile>
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="REM-Engine.cpp" />
@@ -131,6 +135,9 @@
       <Filter>Engine\Application</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Text.cpp">
+      <Filter>Engine\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestScene.h" />
@@ -158,6 +165,10 @@
     </ClInclude>
     <ClInclude Include="Application.h">
       <Filter>Engine\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes.h" />
+    <ClInclude Include="Text.h">
+      <Filter>Engine\Text</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

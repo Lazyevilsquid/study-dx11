@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _TEXTURE_H_
+#define _TEXTURE_H_
+
 #include "Type.h"
 
 class Texture
@@ -17,3 +19,5 @@ private:
 public:
 	Texture* LoadTexture(wstring filepath);
 };
+
+#endif // !_TEXTURE_H_

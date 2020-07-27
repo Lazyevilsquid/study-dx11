@@ -1,6 +1,11 @@
-#pragma once
-#include "DXUT.h"
+/// <summary>
+/// 기본 타입들 vector2, color, singleton, time
+/// <\summary>
+#ifndef _TYPE_H_
+#define _TYPE_H_
 
+#include "DXUT.h"
+#include "Includes.h"
 template <class T>
 
 class Singleton
@@ -80,3 +85,4 @@ public:
 	static const int _time;
 };
 
+#endif // !_TYPE_H_
