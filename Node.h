@@ -32,6 +32,9 @@ public:
 
 	// 객체의 위치 크기 각도를 담아 행렬로 변환
 	D3DXMATRIX GetMatrix();	
+	
+	void setDepth(int depth) { _layer = depth; }
+	const int getDepth()const { return _layer; }
 
 	void setPosition(const float x, const float y) { _position.Set(x, y); }
 	void setPosition(const Vector2 vec) { _position = vec; }

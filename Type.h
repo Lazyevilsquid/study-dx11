@@ -78,11 +78,16 @@ public:
 class Time
 {
 public:
-	Time() = default;
+	Time() { _time = timeGetTime(); }
 	virtual ~Time();
 
 public:
-	static const int _time;
+	DWORD _time;
+	
+	DWORD getTimer();
+	void TimePause(int ms);
+	void Reset();
+
 };
 
 #endif // !_TYPE_H_

@@ -41,3 +41,24 @@ void Vector2::Set(Vector2 vec)
 	this->x = vec.x;
 	this->y = vec.y;
 }
+
+Time::~Time()
+{
+
+}
+
+DWORD Time::getTimer()
+{
+	return (DWORD)_time;
+}
+
+void Time::Reset()
+{
+	_time = timeGetTime();
+}
+
+void Time::TimePause(int ms)
+{
+	DWORD start = getTimer();
+	while (start + ms > getTimer());
+}

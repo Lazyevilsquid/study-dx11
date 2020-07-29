@@ -7,6 +7,7 @@ class TestScene :public Scene
 {
 public:
 	Sprite* testSprite;
+	Sprite* test1Sprite;
 	Text* testText;
 	void Create() override;
 	void Update() override;

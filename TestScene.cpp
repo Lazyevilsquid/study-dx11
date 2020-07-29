@@ -11,6 +11,12 @@ void TestScene::Create()
 	testSprite->AddRenderTarget();// 렌더 시작
 	testText = new Text();
 	testText->TextInit();
+
+	test1Sprite = new Sprite();	// 동적할당
+	test1Sprite->SetTexture(L"rem.png");	// 텍스쳐 설정
+	test1Sprite->_position = Vector2(680, 300);
+	test1Sprite->_isUi = true; // 일단 카메라를 설정해주지 않았으니 ui 상태로 만들기
+	test1Sprite->AddRenderTarget();// 렌더 시작
 }
 
 void TestScene::Update()
@@ -25,6 +31,7 @@ void TestScene::Update()
 
 void TestScene::OnExit()
 {
+	delete test1Sprite;
 	delete testSprite;
 	delete testText;
 	std::cout << "Test Scene Exit" << endl;
