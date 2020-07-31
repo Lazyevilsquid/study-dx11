@@ -170,6 +170,7 @@
     <ClInclude Include="Text.h">
       <Filter>Engine\Text</Filter>
     </ClInclude>
+    <ClInclude Include="Input.h" />
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">

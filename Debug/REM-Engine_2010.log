@@ -222,7 +222,6 @@ C:\Users\CKIRUser\Desktop\study-dx9\Node.h(1,1): warning C4828: The file contain
 C:\Users\CKIRUser\Desktop\study-dx9\Node.h(1,1): warning C4828: The file contains a character starting at offset 0x1d6 that is illegal in the current source character set (codepage 65001).
 C:\Users\CKIRUser\Desktop\study-dx9\Node.h(1,1): warning C4828: The file contains a character starting at offset 0x1d8 that is illegal in the current source character set (codepage 65001).
 C:\Users\CKIRUser\Desktop\study-dx9\Node.h(1,1): warning C4828: The file contains a character starting at offset 0x1d9 that is illegal in the current source character set (codepage 65001).
-  Scene.cpp
   Sprite.cpp
 C:\Users\CKIRUser\Desktop\study-dx9\Director.h(1,1): warning C4828: The file contains a character starting at offset 0x19 that is illegal in the current source character set (codepage 65001).
 C:\Users\CKIRUser\Desktop\study-dx9\Director.h(1,1): warning C4828: The file contains a character starting at offset 0x1a that is illegal in the current source character set (codepage 65001).
@@ -420,6 +419,7 @@ C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9math.h(124
 C:\Users\CKIRUser\Desktop\study-dx9\Type.cpp(33,34): warning C4458: declaration of 'y' hides class member
 C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9math.h(124,14): message : see declaration of 'D3DXVECTOR2::y'
   Generating Code...
+C:\Users\CKIRUser\Desktop\study-dx9\Input.h(90): warning C4715: 'Input::MouseButtonDown': not all control paths return a value
   main.cpp
 C:\Users\CKIRUser\Desktop\study-dx9\Director.h(1,1): warning C4828: The file contains a character starting at offset 0x19 that is illegal in the current source character set (codepage 65001).
 C:\Users\CKIRUser\Desktop\study-dx9\Director.h(1,1): warning C4828: The file contains a character starting at offset 0x1a that is illegal in the current source character set (codepage 65001).

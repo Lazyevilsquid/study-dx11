@@ -407,6 +407,7 @@
     </ClInclude>
     <ClInclude Include="Director.h" />
     <ClInclude Include="Includes.h" />
+    <ClInclude Include="Input.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Scene.h" />

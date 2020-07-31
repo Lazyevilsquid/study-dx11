@@ -17,7 +17,11 @@ void TestScene::Update()
 {
 
 	testText->TextDraw(L"asdfasdfasdfasfd", 100, 30, 0, 0, Color::White());
-	if (DXUTIsMouseButtonDown('0'))
+	if (Input::MouseButtonDown(1))
+	{
+		std::cout << "mouse click" << endl;
+	}
+	if (Input::GetKeyDown(KeyCode::A))
 	{
 		std::cout << "mouse click" << endl;
 	}
