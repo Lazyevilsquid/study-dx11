@@ -104,7 +104,7 @@ void Application::Init(Scene* scene)
     DXUTSetHotkeyHandling(true, true, true);  // handle the default hotkeys
     DXUTSetCursorSettings(true, true); // Show the cursor and clip it when in full screen
     DXUTCreateWindow(_title.c_str());
-    DXUTCreateDevice(D3D_FEATURE_LEVEL_9_1, _isWindow, 1280, 720);
+    DXUTCreateDevice(D3D_FEATURE_LEVEL_9_1, _isWindow , 1280, 720);
 
     Director::getInstance()->SetScene(scene);
 

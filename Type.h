@@ -6,6 +6,7 @@
 
 #include "DXUT.h"
 #include "Includes.h"
+#include "Input.h"
 template <class T>
 
 class Singleton
